@@ -1,29 +1,30 @@
 # -*- coding: cp1251 -*-
-#
+
 import random
+from unicodedata import normalize
 
 def checker1(num):
     if num % 3 == 0: 
-        print("Число делится на 3")
+        print(" РџСЂРѕРІРµСЂРєР° 3")
     else: 
-        print("Число не делится на 3")
+        print("пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 3")
 
 while True:
     checker = False
-    primaryChoice = input("Выбор задания для проверки : \n1)\n2)\n3)\n4)\n5) - Выход\nВыбор : ")
+    primaryChoice = input("пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ : \n1)\n2)\n3)\n4)\n5) - пїЅпїЅпїЅпїЅпїЅ\nпїЅпїЅпїЅпїЅпїЅ : ")
     if [num for num in primaryChoice if num not in ".,/*-+1234567890"]: checker = True
     if checker == True:
-        print("Так нельзя")
+        print("пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ")
         break
     primaryChoice = int(primaryChoice)
     
     if primaryChoice == 1:
-        print("Введите число для проверки для деления на 3")
+        print("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 3")
         num = input()
         num = int(num)
         checker1(num)
         
     if primaryChoice == 2:
-        print("Введите число, которое будет делить сотню")
+        print("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ")
         
         
